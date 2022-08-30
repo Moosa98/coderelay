@@ -57,7 +57,7 @@ var self = this;
   // do something with myJson
 }
        this.addcomplaint = async (ComplaintID,ComplaineeEmailId,Status,Availability,Category,ComplaineeName,Description,H1IssueTime,Hostel,Officer,OfficerEmailId,OfficerName,Phone,Room) => {
-  let temp = '{"ComplaintID":"'+ComplaintID+'","ComplaineeEmailId":"'+ ComplaineeEmailId +'","Status":"'+ Status+'","Availability":"'+Availability+'","Category":'+Category+',"ComplaineeName":"'+ComplaineeName+'","Description":'+Description+'","H1IssueTime":"'+H1IssueTime+'","Hostel":'+ Hostel+'","Officer":"'+Officer+'","Category":"'+OfficerEmailId+'","OfficerName":"'+OfficerName+'","Room":'+ Room+'","Phone":"'+Phone+'"}';
+  let temp = '{"ComplaintID":"'+ComplaintID+'","ComplaineeEmailId":"'+ ComplaineeEmailId +'","Status":"'+ Status+'","Availability":"'+Availability+'","Category":"'+Category+'","ComplaineeName":"'+ComplaineeName+'","Description":"'+Description+'","H1IssueTime":"'+H1IssueTime+'","Hostel":"'+ Hostel+'","Officer":"'+Officer+'","Category":"'+OfficerEmailId+'","OfficerName":"'+OfficerName+'","Room":"'+ Room+'","Phone":"'+Phone+'"}';
   console.log(temp);
   let x = JSON.parse(temp);
   console.log(x);
@@ -168,7 +168,7 @@ this.submit_complaint = async (event) => {
             new_complaint_data["OfficerName"] = officer_name;
             new_complaint_data["OfficerEmailId"] = officer_email;
             new_complaint_data["H1IssueTime"] = self.availabilitytime();
-            await self.addcomplaint(complaint_id.toString(),new_complaint_data["ComplaineeEmailId"],new_complaint_data["Status"],new_complaint_data["Availability"].substring(0,10),new_complaint_data["Category"],new_complaint_data["ComplaineeName"],new_complaint_data["Description"],new_complaint_data["H1IssueTime"],new_complaint_data["Hostel"],new_complaint_data["Officer"],new_complaint_data["OfficerEmailId"],new_complaint_data["OfficerName"],new_complaint_data["Phone"],new_complaint_data["Room"]);
+            await self.addcomplaint(complaint_id.toString(),new_complaint_data["ComplaineeEmailId"],new_complaint_data["Status"],new_complaint_data["Availability"].substring(0,10),new_complaint_data["Category"],new_complaint_data["ComplaineeName"],new_complaint_data["Description"],new_complaint_data["H1IssueTime"].substring(1,10),new_complaint_data["Hostel"],new_complaint_data["Officer"],new_complaint_data["OfficerEmailId"],new_complaint_data["OfficerName"],new_complaint_data["Phone"],new_complaint_data["Room"]);
             console.log(new_complaint_data);
             self.last_complaint_value("Last Complaint Submitted: " + complaint_id.toString());
             
