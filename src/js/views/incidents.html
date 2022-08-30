@@ -1,0 +1,89 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h3>Track Your Complaint</h3>
+  <div id="mainContent">
+            <oj-input-text
+              id="filter"
+              class="oj-form-control-max-width-md"
+              label-hint="Filter Key Word"
+              label-edge="inside"
+              placeholder="Type to filter"
+              on-raw-value-changed="[[filter_value_changed]]"
+              value="{{table_filter_value}}"
+              clear-icon="always"></oj-input-text><br><br><br>
+              <div style="overflow: scroll;">
+            <oj-table
+              id="table"
+              aria-label="Complaints Table"
+              accessibility.row-header="depName"
+              data="[[complaint_dataprovider]]"
+              columns-default.sortable="disabled"
+              columns='[{"headerText": "Complaint ID", 
+                       "field": "ComplaintID",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "depId"},
+                      {"headerText": "Complainee Name", 
+                       "field": "ComplaineeName",
+                       "resizable": "enabled",
+                       "id": "depName"},
+                      {"headerText": "Complainee Email ID", 
+                       "field": "ComplaineeEmailId",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "locId"},
+                      {"headerText": "Complaint Description", 
+                       "field": "Description",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Hostel", 
+                       "field": "Hostel",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "locId"},
+                      {"headerText": "Room Number", 
+                       "field": "Room",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Phone Number", 
+                       "field": "Phone",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "locId"},
+                      {"headerText": "Complaint Status", 
+                       "field": "Status",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Complainee Category", 
+                       "field": "Category",
+                       "headerClassName": "oj-sm-only-hide",
+                       "className": "oj-sm-only-hide",
+                       "resizable": "enabled",
+                       "id": "locId"},
+                      {"headerText": "Assigned Officer Hierarchy", 
+                       "field": "Officer",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Assigned Officer Name", 
+                       "field": "OfficerName",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Assigned Officer Email ID", 
+                       "field": "OfficerEmailId",
+                       "resizable": "enabled",
+                       "id": "manId"},
+                      {"headerText": "Officer Assigned Time", 
+                       "field": "H1IssueTime",
+                       "resizable": "enabled",
+                       "id": "manId"}]'
+                       style="width: 100%;"></oj-table></div>
+          </div>
+</div>

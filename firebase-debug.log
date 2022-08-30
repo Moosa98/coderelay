@@ -1,0 +1,130 @@
+[debug] [2022-08-28T11:35:20.533Z] ----------------------------------------------------------------------
+[debug] [2022-08-28T11:35:20.534Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2022-08-28T11:35:20.534Z] CLI Version:   11.8.0
+[debug] [2022-08-28T11:35:20.534Z] Platform:      darwin
+[debug] [2022-08-28T11:35:20.534Z] Node Version:  v18.8.0
+[debug] [2022-08-28T11:35:20.537Z] Time:          Sun Aug 28 2022 17:05:20 GMT+0530 (India Standard Time)
+[debug] [2022-08-28T11:35:20.537Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-28T11:35:20.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-28T11:35:20.540Z] > authorizing via signed-in user (p21gmukundh@iimidr.ac.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mukundhganesh/Desktop/coderelay/coderelay
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-08-28T11:35:44.258Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-08-28T11:35:44.258Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"coderelay","name":"coderelay"}
+[debug] [2022-08-28T11:35:46.385Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2022-08-28T11:35:46.385Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-08-28T11:35:47.015Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID coderelay. Please try again with a unique project ID.
+[debug] [2022-08-28T11:36:10.275Z] ----------------------------------------------------------------------
+[debug] [2022-08-28T11:36:10.276Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2022-08-28T11:36:10.276Z] CLI Version:   11.8.0
+[debug] [2022-08-28T11:36:10.276Z] Platform:      darwin
+[debug] [2022-08-28T11:36:10.276Z] Node Version:  v18.8.0
+[debug] [2022-08-28T11:36:10.276Z] Time:          Sun Aug 28 2022 17:06:10 GMT+0530 (India Standard Time)
+[debug] [2022-08-28T11:36:10.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-28T11:36:10.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-28T11:36:10.279Z] > authorizing via signed-in user (p21gmukundh@iimidr.ac.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mukundhganesh/Desktop/coderelay/coderelay
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-08-28T11:36:34.653Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2022-08-28T11:36:35.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2022-08-28T11:36:35.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2022-08-28T11:36:38.726Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/coderelay:addFirebase [none]
+[debug] [2022-08-28T11:36:39.596Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/coderelay:addFirebase 403
+[debug] [2022-08-28T11:36:39.597Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/coderelay:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-08-28T11:36:39.597Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-08-28T11:36:39.885Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2022-08-28T11:36:48.547Z] ----------------------------------------------------------------------
+[debug] [2022-08-28T11:36:48.548Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2022-08-28T11:36:48.548Z] CLI Version:   11.8.0
+[debug] [2022-08-28T11:36:48.548Z] Platform:      darwin
+[debug] [2022-08-28T11:36:48.548Z] Node Version:  v18.8.0
+[debug] [2022-08-28T11:36:48.548Z] Time:          Sun Aug 28 2022 17:06:48 GMT+0530 (India Standard Time)
+[debug] [2022-08-28T11:36:48.549Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-28T11:36:48.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-28T11:36:48.551Z] > authorizing via signed-in user (p21gmukundh@iimidr.ac.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mukundhganesh/Desktop/coderelay/coderelay
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-08-28T11:37:04.235Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-08-28T11:37:04.236Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"coderelaycomp","name":"coderelaycomp"}
+[debug] [2022-08-28T11:37:06.414Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2022-08-28T11:37:06.415Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6754507251230391867"}
+[debug] [2022-08-28T11:37:06.416Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 [none]
+[debug] [2022-08-28T11:37:08.252Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 200
+[debug] [2022-08-28T11:37:08.252Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 {"name":"operations/cp.6754507251230391867"}
+[debug] [2022-08-28T11:37:08.753Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-08-28T11:37:08.754Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 [none]
+[debug] [2022-08-28T11:37:10.605Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 200
+[debug] [2022-08-28T11:37:10.605Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6754507251230391867 {"name":"operations/cp.6754507251230391867","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"747043932986","projectId":"coderelaycomp","lifecycleState":"ACTIVE","name":"coderelaycomp","createTime":"2022-08-28T11:37:05.823Z","parent":{"type":"organization","id":"180279778733"}}}
+[debug] [2022-08-28T11:37:10.608Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/coderelaycomp:addFirebase [none]
+[debug] [2022-08-28T11:37:11.835Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/coderelaycomp:addFirebase 403
+[debug] [2022-08-28T11:37:11.835Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/coderelaycomp:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-08-28T11:37:11.836Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-08-28T11:37:12.108Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

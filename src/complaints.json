@@ -1,0 +1,68 @@
+{
+    "Complaints": [
+      {
+        "Availability": "2022-08-28T11:04.685",
+"Category": "Painting",
+"H1IssueTime": "2019-08-28T11:04.685",
+"Officer": "H1",
+"ComplaineeEmailId": "p21sruthib@iimidr.ac.in",
+"ComplaineeName": "Sruthi Bhaskaran",
+"ComplaintID": "8670707326076970",
+"Description": "Enter Complaint Description here",
+"Hostel": "Jade",
+"Phone": 1234567890,
+"Room": 345,
+"Status": "REJECTED",
+"OfficerName": "Aswin Raj",
+        "OfficerEmailId": "p21aswinr@iimidr.ac.in"
+},
+      {
+        "Availability": "2022-08-28T11:04.685",
+"Category": "Room Access",
+"H1IssueTime": "2021-08-28T11:04.685",
+"Officer": "H2",
+"ComplaineeEmailId": "p21joea@iimidr.ac.in",
+"ComplaineeName": "Joe Allen",
+"ComplaintID": "8670707326028390",
+"Description": "Enter Complaint Description here2",
+"Hostel": "Jade",
+"Phone": 1234567890,
+"Room": 345,
+"Status": "PENDING",
+"OfficerName": "Aswin Raj",
+        "OfficerEmailId": "p21aswinr@iimidr.ac.in"
+      },
+      {
+"Availability": "2022-08-28T11:04.685",
+"Category": "Cleanliness",
+"H1IssueTime": "2022-08-28T11:04.685",
+"Officer": "H1",
+"ComplaineeEmailId": "p21sujanyar@iimidr.ac.in",
+"ComplaineeName": "Sujanya Ramkumar",
+"ComplaintID": "8670283726076970",
+"Description": "Enter Complaint Description here3",
+"Hostel": "Agate",
+"Phone": 1234567890,
+"Room": 345,
+"Status": "APPROVED",
+"OfficerName": "Aswin Raj",
+        "OfficerEmailId": "p21aswinr@iimidr.ac.in"
+      },
+      {
+        "Availability": "2022-08-28T11:04.685",
+"Category": "Painting",
+"H1IssueTime": "2022-08-28T11:04.685",
+"Officer": "H1",
+"ComplaineeEmailId": "p21sruthib@iimidr.ac.in",
+"ComplaineeName": "Ads",
+"ComplaintID": "8670707343376970",
+"Description": "Enter Complaint Description here4",
+"Hostel": "Diamond",
+"Phone": 1234567890,
+"Room": 345,
+"Status": "PENDING",
+"OfficerName": "Aswin Raj",
+        "OfficerEmailId": "p21aswinr@iimidr.ac.in"
+      }
+    ]
+  }

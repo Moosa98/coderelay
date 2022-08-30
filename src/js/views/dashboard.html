@@ -1,0 +1,77 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h3>Add/Submit Complaints</h3><br>
+  <div>
+      <oj-select-single
+              id="select1"
+              label-hint="Select Hostel"
+              label-edge="inside"
+              class="oj-form-control-max-width-md"
+              data="[[hostelDP]]"
+              value="{{hostelselectVal}}"></oj-select-single><br><br><br>
+              <oj-select-single
+              id="select2"
+              label-hint="Select Category of Issue"
+              label-edge="inside"
+              class="oj-form-control-max-width-md"
+              data="[[complaintcategoryDP]]"
+              value="{{categoryselectVal}}"></oj-select-single><br><br><br>
+              <oj-input-text
+              id="text-input"
+              value="{{complainee_name_value}}"
+              label-hint="Complainee Name"
+              label-edge="inside" style="width: 600px;"></oj-input-text><br><br><br>
+              <oj-input-text
+              id="text-input"
+              disabled = "true"
+              value="{{complainee_mailid_value}}"
+              label-hint="Complainee Email Id"
+              label-edge="inside" style="width: 600px;"></oj-input-text><br><br><br>
+              <oj-input-date-time
+                id="inputdatetime"
+                value="{{availabilitytime}}"
+                label-hint="Availability Date & Time" style="width: 600px;"></oj-input-date-time><br><br><br>
+                <oj-input-number
+              id="regExpInputNumber"
+              value="{{room_no_value}}"
+              label-hint="Enter Room Number"
+              label-edge="inside"
+              validators="[[[room_no_validator]]]" style="width: 600px;"></oj-input-number><br><br><br>
+              <oj-input-number
+              id="regExpInputNumber"
+              value="{{phone_no_value}}"
+              label-hint="Enter Phone Number"
+              converter="[[phone_no_converter]]"
+              label-edge="inside"
+              validators="[[[phone_no_validator]]]" style="width: 600px;"></oj-input-number><br><br><br>
+               <oj-text-area
+                id="both"
+                value="{{complaint_description}}"
+                resize-behavior="both" style="width: 600px;"
+                label-hint="Enter Complaint Description"></oj-text-area><br><br><br>
+                <oj-button id="icon_button2" chroming="callToAction" on-oj-action="[[submit_complaint]]">
+                <span slot="startIcon" class="oj-ux-ico-bar-chart"></span>
+                Submit Complaint
+              </oj-button><br><br>
+              <div class="oj-sm-margin-4x-vertical">
+              <span></span>
+              <span>
+                <oj-bind-text value="[[last_complaint_value]]"></oj-bind-text>
+              </span>
+            </div>
+            <oj-dialog id="modalDialog1" dialog-title="Form Error" aria-describedby="desc">
+              <div slot="body">
+                <p id="desc">
+                  All field are non-optional. Do not leave any empty fields in the Complaint Form
+                </p>
+              </div>
+              <div slot="footer">
+                <oj-button id="okButton" on-oj-action="[[error_dialog_close]]">CLOSE</oj-button>
+              </div>
+            </oj-dialog>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+  {
+    "Officers": [
+      {
+        "OfficerName": "Mukundh Ganesh",
+        "OfficerEmailId": "p21gmukundh@iimidr.ac.in",
+        "Password": "qwerty3",
+        "HierarchyLevel": "H3",
+        "Type": "Officer"
+      },
+      {
+        "OfficerName": "Sujanya Ramkumar",
+        "OfficerEmailId": "p21sujanyar@iimidr.ac.in",
+        "Password": "qwerty2",
+        "HierarchyLevel": "H2",
+        "Type": "Officer"
+      },
+      {
+        "OfficerName": "Aswin Raj",
+        "OfficerEmailId": "p21aswinr@iimidr.ac.in",
+        "Password": "qwerty1",
+        "HierarchyLevel": "H1",
+        "Type": "Officer"
+      }
+    ],
+    "_contextInfo": {
+      "limit": 25,
+      "offset": 0
+    }
+  }
